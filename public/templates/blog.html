@@ -1,0 +1,28 @@
+<div class="row">
+    <div class="box">
+        <div class="col-lg-12">
+            <hr>
+            <h2 class="intro-text text-center">Company <strong>blog</strong>
+            </h2>
+            <hr>
+        </div>
+        <div class="col-lg-12 text-center" ng-repeat="post in posts">
+            <img class="img-responsive img-border img-full" ng-src="{{post.img}}" alt="">
+            <h2>{{ post.title }}
+                <br>
+                <small>{{ post.date }}</small>
+            </h2>
+            <p>{{ post.content }}</p>
+            <a ng-href="#" class="btn btn-default btn-lg">Read More</a>
+            <hr>
+        </div>
+        <div class="col-lg-12 text-center">
+            <ul class="pager">
+                <li class="previous"><a href="#">&larr; Older</a>
+                </li>
+                <li class="next"><a href="#">Newer &rarr;</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
